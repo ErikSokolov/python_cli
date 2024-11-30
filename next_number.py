@@ -2,7 +2,7 @@ x, li, small, maxx, c = input(), list(), 0, 0, 1
 
 for i in range(len(x)):
     li.append(int(x[i]))
-for i in range(len(li) - 1, -1, -1):
+for i in range(len(li)):
     if i ==0:
         print("No number Possible")
         c = 0
