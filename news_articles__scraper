@@ -1,0 +1,41 @@
+import  pickle
+import re
+import sys
+import urllib
+
+import pandas as pd
+import requests
+
+#importing necessary libraries
+#from bs4 import BeatifulSoup
+#from newspaper import Article
+
+#Extracting links for all the pages (1 to 158) of boomlive fake news section
+fakearticle_links = []
+for i in range(1, 159)
+	url = "https://www.boomlive.in/fakenews/" + str(i)
+
+	try:
+		#this might throw an exception if something goes wrong.
+		page = requests.get(url)
+
+		#send requests
+		page = requests.get(url)
+		soup = BeautifulSoup(page.text,"html.parser")
+
+		# Collecting all the links in a list
+		for content in soup.find_all("h2", attrs={"class": "0
+		try:
+			#this might throw an exception if something goes wrong.
+			page = requests.get(url)
+
+			#send requests
+			page = requests.get(url)
+
+
+			soup = BeautifulSoup(page.text,"html.parser")
+
+#Collecting all the links in a list
+			for content in soup.find_all("h2", attrs={"class": "entry-title"}):
+			link = content.find("a"_
+			fakearticle_links.append(link.get("href"))
