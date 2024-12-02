@@ -19,3 +19,4 @@ for i in range(small + 1, len(li)):
         if c:
             for i in range(len(li)):
                 print(li[i], end="")
+
