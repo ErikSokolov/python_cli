@@ -2,13 +2,11 @@ def main():
     def foo():
         i = 0
         maxx = 10
-        cookie = []
 
 
-        while i != maxx -1:
-            foo = input("foo")
-            cookie.append(foo)
-            if cookie == "c":
+        while i != maxx-1:
+            user_input = input("c?")
+            if user_input == "c":
                 i += 1
                 print(f" you have pressed {i} cookie(s)")
         else:
