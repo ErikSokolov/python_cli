@@ -1,19 +1,18 @@
 def main():
     def foo():
         i = 0
-        maxx = 10
+        maxx = 3
 
 
-        while i != maxx:
+        while i <= maxx:
             user_input = input("c?")
-            while i != maxx-1:
-                if user_input == "c":
-                    i += 1
+            if user_input == "c":
+                i += 1
+                print(i)
+                if i <10:
                     print(f" you have pressed {i} cookie(s)")
-            if i == maxx:
-                if user_input == "c":
-                    print(f"You have pressed all {maxx} cookies")
-            
+                elif i == 10:
+                    print:("foo")
     foo()
 if __name__ == "__main__":
     main()
