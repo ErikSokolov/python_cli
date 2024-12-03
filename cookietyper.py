@@ -3,16 +3,16 @@ def main():
         i = 0
         maxx = 3
 
-
         while i <= maxx:
-            user_input = input("c?")
+            user_input = input("Press 'c' to eat cookie")
             if user_input == "c":
                 i += 1
-                print(i)
-                if i <10:
+                if i < maxx:
+                    
                     print(f" you have pressed {i} cookie(s)")
-                elif i == 10:
-                    print:("foo")
+                elif i == maxx:
+                    print(f" You have eaten all {maxx} cookies") 
+                    break
     foo()
 if __name__ == "__main__":
     main()
