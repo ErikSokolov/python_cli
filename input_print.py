@@ -1,21 +1,26 @@
 import curses
-import os
 import time
+#import os
 
 def main(window):
     x = 0
+    curses.curs_set(0)
+    window.nodelay(True)
+    window.clear()
+
     while True:
-        time.sleep(1)
-        
-        os.system('cls' if os.name == 'nt' else 'clear')
-        print(f'foo{x}', end = "\n This is a test") 
+        key = window.getch()
 
+        window.clear()
 
+        window.addstr(0,0, f"foo {x}")
 
-        #window.addstr(f"bar{x}")
-        x += 1
-        #window.refresh()
-        #window.getch()
+        if key == ord('q'):
+            x += 1 
+
+        window.refresh()
+
+        time.sleep(0.2)
 
     
 
